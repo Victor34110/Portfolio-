@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+    href="style.css" />
+    
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      
   </head>
 
   <body>
-    <header class="nav-links">
+    <header class="nav-links-head">
       <a href="#" class="logo"><span> Victor GALIAN</span></a>
 
       <ul class="nav-links">
@@ -22,47 +28,61 @@
         </li>
 
         <li>
-          <a href="#Projects">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
 
         <li>
-          <a href="#Skills">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
 
         <li>
-          <a href="#Pictures">Pictures</a>
+          <a href="#pictures">Pictures</a>
         </li>
 
         <li>
-          <a href="#Contact">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
 
       <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-      <button class="visit-btn">Visit Github</button>
+    <a href="https://github.com/Victor34110" target="_blank" class="visit-btn">Visit Github</a>
+
     </header>
+
+
+
+
 
     <section id="about" class="about">
       <div class="about-container">
-        <img src="lobster.jpg" alt="" />
+        <img src="photos/photo_d'identite.jpg" alt="" />
 
         <div class="info-box">
           <div class="text">
             <h3>Hi, i'm</h3>
-            <h1>Victor GALIAN</h1>
+            <h1>Victor GALIAN.</h1>
             <span>Begginner frontend Developer</span>
           </div>
 
           <div class="btn-group">
-            <div class="btn">Download</div>
-            <div class="btn">Contact</div>
+          <a href="CV.pdf" class="btn" download>Download</a>
+          <a href="#contact" class="btn">Contact</a>
           </div>
 
           <div class="socials">
+            <a href="https://www.linkedin.com/in/galian-victor/" target="_blank">
             <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com/Victor34110" target="_blank">
             <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.instagram.com/vic_gln34/" target="_blank">
             <i class="fa-brands fa-instagram"></i>
+            </a>
+
           </div>
         </div>
       </div>
@@ -82,108 +102,174 @@
           <div class="grid-card">
             <p>À la recherche d’une alternance à partir de janvier 2026</p>
           </div>
-
         </div>
-         <img src="lobster.jpg" alt="" />
+        <img src="photos/lobster.jpg" alt="" />
       </div>
     </section>
 
 
     <section id="projects" class="projects">
-      <h2 class="section-title">projects</h2>
+
+      <h2 class="section-title">Projects</h2>
       <div class="projects-grid">
 
 
         <div class="projects-card">
-            <img src="lobster.jpg" alt="">
-            <h3>title projects1</h3>
-            <p>petit texte qui definit le projet, explication de projet</p>
+          <img src="photos/jobster_beige.png" alt="" />
+          <h3>Job-Board</h3>
+          <p>petit texte qui definit le projet, explication de projet</p>
 
-            <div class="btn-group">
-              <div class="btn">Live demo</div>
-              <div class="btn">Github repo</div>
-            </div>
-         </div>
+          <div class="btn-group">
+            <div class="btn">Live demo</div>
+            <a href="https://github.com/ton-compte/ton-repo" class="btn" target="_blank">Github Repo</a>
+
+          </div>
+        </div>
+
 
 
         <div class="projects-card">
-            <img src="lobster.jpg" alt="">
-            <h3>title projects2</h3>
-            <p>petit texte qui definit le projet, explication de projet</p>
+          <img src="photos/jobster_beige.png" alt="" />
+          <h3> Portfolio</h3>
+          <p>petit texte qui definit le projet, explication de projet</p>
 
-            <div class="btn-group">
-              <div class="btn">Live demo</div>
-              <div class="btn">Github repo</div>
-            </div>
-         </div>
-
-
-          <div class="projects-card">
-            <img src="lobster.jpg" alt="">
-            <h3>title projects3</h3>
-            <p>petit texte qui definit le projet, explication de projet</p>
-
-            <div class="btn-group">
-              <div class="btn">Live demo</div>
-              <div class="btn">Github repo</div>
-            </div>
-         </div>
+          <div class="btn-group">
+            <div class="btn">Live demo</div>
+            <div class="btn">Github repo</div>
+          </div>
+        </div>
 
 
+
+        <div class="projects-card">
+          <img src="photos/jobster_beige.png" alt="" />
+          <h3>title projects3</h3>
+          <p>petit texte qui definit le projet, explication de projet</p>
+
+          <div class="btn-group">
+            <div class="btn">Live demo</div>
+            <div class="btn">Github repo</div>
+          </div>
+
+        </div>
       </div>
+    </section>
+
+
+<section id="skills" class="skills">
+  <h2 class="skill-title">Skills</h2>
+<div class="skill-grid">
+    
+    <div class="skill-card">
+            <img src="photos/html.png" alt="" />
+    </div>
+
+    <div class="skill-card">
+            <img src="photos/css.png" alt="" />
+    </div>
+
+    <div class="skill-card">
+            <img src="photos/script-java.png" alt="" />
+    </div>
+
+    <div class="skill-card">
+            <img src="photos/react.png" alt="" />
+    </div>
+
+    <div class="skill-card">
+            <img src="photos/python.png" alt="" />
+    </div>
+
+    <div class="skill-card">
+            <img src="photos/java.png" alt="" />
+    </div>
+
+    <div class="skill-card">
+            <img src="photos/github.png" alt="" />
+    </div>
+
+    <div class="skill-card">
+            <img src="photos/php.png" alt="" />
+    </div>
+  
+    <div class="skill-card">
+            <img src="photos/pgadmin.png" alt="" />
+    </div>
+</div>
+
+</section>
 
 
 
+    <section id="pictures" class="pictures">
+      <h2 class="pictures-title">Pictures</h2>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="photos/photo_d'identite.jpg" alt="Photo 1"></div>
+      <div class="swiper-slide"><img src="photos/lobster.jpg" alt="Photo 2"></div>
+      <div class="swiper-slide"><img src="photos/projet_jobster.png" alt="Photo 3"></div>
+      <div class="swiper-slide"><img src="photos/jobboard_ordi.png" alt="Photo 4"></div>
+    </div>
+
+  <!-- Flèches et pagination -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
 
     </section>
+
 
     <section id="contact" class="contact">
-
       <div class="input-box">
-         <h2 class="section-title">Contacts</h2>
+        <h2 class="section-title">Contact</h2>
 
-         <div class="input">
-          <input type="text" placeholder="exemple@gmail.com">
+        <div class="input">
+          <input type="text" placeholder="exemple@gmail.com" />
           <i class="fa-solid fa-envelope"></i>
-         </div>
-           
-          <div class="btn">Submit</div>
         </div>
-     
+
+        <div class="btn">Submit</div>
+      </div>
     </section>
 
-    <section id="Photos" class="photos">
-      <h2 class="section-title">Photos</h2>
-    </section>
+    
 
+    <footer>
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
 
-      <footer>
-<ul>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
 
-<li>
-  <a href="#about">About</a>
-</li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
 
-<li>
-  <a href="#projects">Projects</a>
-</li>
+        <li>
+          <a href="#pictures">Pictures</a>
+        </li>
 
-<li>
-  <a href="#picturs">Pictures</a>
-</li>
-
-<li>
-  <a href="#contacts">Contact</a>
-</li>
-
-</ul>
-<p class="copyright">All Rights Rserved / Victor GALIAN</p>
-
-      </footer>
-
-    <script>
-      src = "script.js";
-    </script>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <p class="copyright">© All Rights Rserved / Victor GALIAN</p>
+    </footer>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
+
+
+
+
+ <!-- photos/ police/ relier les boutons/ live demo? comment faire -->
+  <!-- mailto ou Formspree-->
