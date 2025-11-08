@@ -19,6 +19,11 @@
   </head>
 
   <body>
+
+            <!------------- NAVBAR----------------------->
+
+
+
     <header class="nav-links-head">
       <a href="#" class="logo"><span> Victor GALIAN</span></a>
 
@@ -51,7 +56,7 @@
     </header>
 
 
-
+ <!------------- ABOUT----------------------->
 
 
     <section id="about" class="about">
@@ -66,7 +71,9 @@
           </div>
 
           <div class="btn-group">
-          <a href="CV.pdf" class="btn" download>Download</a>
+          <a href="CV.pdf" class="btn" download>CV
+            <i class="fa-solid fa-download"></i>
+          </a>
           <a href="#contact" class="btn">Contact</a>
           </div>
 
@@ -108,6 +115,11 @@
     </section>
 
 
+
+ <!------------- PROJECT----------------------->
+
+
+
     <section id="projects" class="projects">
 
       <h2 class="section-title">Projects</h2>
@@ -117,11 +129,11 @@
         <div class="projects-card">
           <img src="photos/jobster_beige.png" alt="" />
           <h3>Job-Board</h3>
-          <p>petit texte qui definit le projet, explication de projet</p>
+          <p>Jobster est une application web permettant de publier et consulter des offres d’emploi.</p>
 
           <div class="btn-group">
             <div class="btn">Live demo</div>
-            <a href="https://github.com/ton-compte/ton-repo" class="btn" target="_blank">Github Repo</a>
+            <a href="https://github.com/Victor34110/Portfolio-" class="btn" target="_blank">Github Repo</a>
 
           </div>
         </div>
@@ -129,9 +141,9 @@
 
 
         <div class="projects-card">
-          <img src="photos/jobster_beige.png" alt="" />
+          <img src="photos/portfolio_fond.png" alt="" />
           <h3> Portfolio</h3>
-          <p>petit texte qui definit le projet, explication de projet</p>
+          <p>Portfolio personnel présentant mes projets, mes compétences et mon parcours en développement web.</p>
 
           <div class="btn-group">
             <div class="btn">Live demo</div>
@@ -142,7 +154,7 @@
 
 
         <div class="projects-card">
-          <img src="photos/jobster_beige.png" alt="" />
+          <img src="photos/carnet_de_v.png" alt="" />
           <h3>title projects3</h3>
           <p>petit texte qui definit le projet, explication de projet</p>
 
@@ -150,10 +162,27 @@
             <div class="btn">Live demo</div>
             <div class="btn">Github repo</div>
           </div>
-
         </div>
+
+
+        <div class="projects-card">
+          <img src="photos/pacman_fond.png" alt="" />
+          <h3>title projects3</h3>
+          <p>petit texte qui definit le projet, explication de projet</p>
+
+          <div class="btn-group">
+            <div class="btn">Live demo</div>
+            <div class="btn">Github repo</div>
+          </div>
+        </div>
+
+
+
       </div>
     </section>
+
+     <!------------- SKILLS----------------------->
+
 
 
 <section id="skills" class="skills">
@@ -162,42 +191,57 @@
     
     <div class="skill-card">
             <img src="photos/html.png" alt="" />
+            <p class="skill-name">HTML</p>
+
     </div>
 
     <div class="skill-card">
             <img src="photos/css.png" alt="" />
+            <p class="skill-name">CSS</p>
+
     </div>
 
     <div class="skill-card">
             <img src="photos/script-java.png" alt="" />
+            <p class="skill-name">JAVASCRIPT</p>
+
     </div>
 
     <div class="skill-card">
             <img src="photos/react.png" alt="" />
+            <p class="skill-name">REACT</p>
     </div>
 
     <div class="skill-card">
             <img src="photos/python.png" alt="" />
+            <p class="skill-name">PYTHON</p>
     </div>
 
     <div class="skill-card">
             <img src="photos/java.png" alt="" />
-    </div>
-
-    <div class="skill-card">
-            <img src="photos/github.png" alt="" />
+            <p class="skill-name">JAVA</p>
     </div>
 
     <div class="skill-card">
             <img src="photos/php.png" alt="" />
+            <p class="skill-name">PHP</p>
+    </div>
+
+    <div class="skill-card">
+            <img src="photos/github.png" alt="" />
+            <p class="skill-name">GITHUB</p>
     </div>
   
     <div class="skill-card">
             <img src="photos/pgadmin.png" alt="" />
+            <p class="skill-name">PGADMIN</p>
     </div>
 </div>
 
 </section>
+
+
+     <!------------- PICTURES----------------------->
 
 
 
@@ -206,7 +250,7 @@
 
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="photos/photo_d'identite.jpg" alt="Photo 1"></div>
+      <div class="swiper-slide"><img src="photos/jobster_beige.png" alt="Photo 1"></div>
       <div class="swiper-slide"><img src="photos/lobster.jpg" alt="Photo 2"></div>
       <div class="swiper-slide"><img src="photos/projet_jobster.png" alt="Photo 3"></div>
       <div class="swiper-slide"><img src="photos/jobboard_ordi.png" alt="Photo 4"></div>
@@ -218,24 +262,43 @@
     <div class="swiper-pagination"></div>
   </div>
 
-
     </section>
+
+         <!------------- CONTACT----------------------->
 
 
     <section id="contact" class="contact">
       <div class="input-box">
         <h2 class="section-title">Contact</h2>
 
-        <div class="input">
-          <input type="text" placeholder="exemple@gmail.com" />
-          <i class="fa-solid fa-envelope"></i>
-        </div>
+        
+    <form action="mailto:vic.galian22@gmail.com.com" method="POST" enctype="text/plain">
 
-        <div class="btn">Submit</div>
+      <div class="input">
+        <input type="text" name="firstname" placeholder="Prénom" required />
       </div>
+
+      <div class="input">
+        <input type="text" name="lastname" placeholder="Nom" required />
+      </div>
+
+      <div class="input">
+        <input type="email" name="email" placeholder="Adresse e-mail" required />
+      </div>
+
+      <div class="input">
+        <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+      </div>
+
+      <button type="submit" class="bttn">Envoyer</button>
+    </form>
+  </div>
     </section>
 
     
+
+     <!------------- FOOTER----------------------->
+
 
     <footer>
       <ul>
@@ -262,14 +325,13 @@
       <p class="copyright">© All Rights Rserved / Victor GALIAN</p>
     </footer>
     
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- Appele de Swiper JS -->
+    <script src="script.js"></script> <!-- Appele du Script js -->
   </body>
 </html>
 
 
 
 
- <!-- photos/ police/ relier les boutons/ live demo? comment faire -->
-  <!-- mailto ou Formspree-->
+

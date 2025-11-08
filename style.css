@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
     list-style: none;
     /*background-color: black; /*fond*/
-    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 }
@@ -23,7 +23,6 @@ header{
     gap: 5rem;
     background-color: rgb(0, 0, 0);
     backdrop-filter: blur(8px);
-    /*color: rgb(182, 23, 23);*/
     padding: 0.5rem 1.5rem;
     border-radius: 3rem;
     z-index: 1000;
@@ -47,8 +46,8 @@ header{
 
 
 .nav-links-head {
-   /* background-color: rgba(18,18,18,0.8); /*gris sombre*/
-background-color: rgb(0, 0, 0); /*black*/
+    background-color: rgba(18,18,18,0.8); /*gris sombre*/
+
 
 }
 
@@ -61,8 +60,8 @@ background-color: rgb(0, 0, 0); /*black*/
 li a{
     position: relative;
     color: white;
-    font-weight: 300;
-   /* background-color: rgba(18,18,18,0.8); /*gris sombre*/
+    font-weight: 600;
+  
 
 }
 
@@ -87,13 +86,14 @@ li a:hover::before{
     padding: 0.8rem 1.5rem;
     border-radius: 3rem;
     border:none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
     color: rgb(255, 255, 255);
     cursor: pointer;
     text-wrap: nowrap;
     transition: 0.3 ease-in-out;
     background: linear-gradient(to right, rgb(56, 48, 41),rgb(255,121,27));
+    border: 2px solid (18,18,18,0.8);
 }
 
 .visit-btn:hover{
@@ -133,12 +133,12 @@ section{
 
 
 .about img{
-    width: 30vw;
+    width: 20vw;
     border-radius: 50%;
 
- }
+}
 
- .info-box{
+.info-box{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -170,23 +170,23 @@ section{
 
 .btn-group{
     display: flex;
-    gap: 1rem
+    gap: 1rem;
+  
  }
 
 
-.btn{
+.btn{ /*BTN GENERAL*/
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
     border: 2px solid white;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
     text-wrap: nowrap;
     transition: 0.2s ease-in-out;
     color: rgb(255, 255, 255);
-    /*background-color: rgba(26, 26, 26, 0.8); /*gris sombre  --A DECIDER--*/  
-
-
+    flex: 1;
  }
+
 
  .btn:hover{
     background-color: black;
@@ -217,7 +217,7 @@ color: rgb(255,121,27);
 /* ------------------------------A PROPOS----------------------------------------*/
 .apropos h2{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     margin-bottom: 3rem;
     color: white;
@@ -232,7 +232,7 @@ color: rgb(255,121,27);
 }
 
 .apropos-conteneur img{
-    width: 24vw;
+    width: 20vw;
     border-radius: 3rem;
 }
 
@@ -275,33 +275,27 @@ color: rgb(255,121,27);
   font-size: 1.2rem;
 }
 
-
-/*-----------------------------SCROLLBAR---------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------------------------------PROJECT---------------------------------------*/
 
 
 
 
 .projects-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    padding: 6rem 0; /* espace en haut et en bas */
+}
 
+.projects h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: white;
 }
 
 .projects-card{
+    
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -317,14 +311,7 @@ color: rgb(255,121,27);
     cursor: pointer;
     transition: 0.3s ease-in-out;
     color: #6e6e73;
-
-}
-
-.projects h2{
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 3rem;
-    color: white;
+    font-weight: 600;
 }
 
 
@@ -333,11 +320,11 @@ color: rgb(255,121,27);
     color: white;
     transform: translateY(-10px)scale(1.02);
     border: 2px solid #6e6e73;
-
 }
 
+
 .projects-card img{
-    width: 20vw;
+    width: 15vw;
     border-radius: 1rem;
 }
 
@@ -357,7 +344,7 @@ color: rgb(255,121,27);
 
 .projects-card h3{
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     color: white;
 }
 
@@ -370,20 +357,21 @@ color: rgb(255,121,27);
 
 .skill-title{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 3rem;
     color: white;
 }
 
 .skill-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 2rem;
+    justify-items: center;
 }
 
 .skill-card{
     width: 0vw;
-    padding: 2rem 10rem;
+    padding: 2rem 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -395,17 +383,38 @@ color: rgb(255,121,27);
     cursor: pointer;
     transition: 0.3s ease-in-out;
     background-color: rgba(26, 26, 26, 0.8); /*gris sombre*/
+    position: relative;
+}
 
+
+
+.skill-name {
+    position: absolute;
+    left: 50%;
+    transform: translate(-90%, 10px); /* départ décalé 10PX */
+    bottom: -29px;                    /* sous la map */
+    background-color: rgba(0, 0, 0, 0.8); /*gris sombre*/
+    color: #ffffff;
+    font-size: 0.80rem;
+    padding: 6px 60px;
+    opacity: 0;
+    z-index: 20;
+    font-weight: 600
+}
+
+.skill-card:hover .skill-name {
+    opacity: 1;
+    transform: translate(-50%, 0); /* remonte en position visible */
 }
 
 .skill-card img{
-    width: 11vw;
+    width: 8vw;
     border-radius: 1rem;
     background-color: rgba(26, 26, 26, -0.2); /*gris sombre*/
 
 }
 
-.skill-card:hover{
+.skill-card:hover {
     
     transform: translateY(-10px)scale(1.02);
     border: 2px solid #6e6e73;
@@ -416,9 +425,6 @@ color: rgb(255,121,27);
 
 /* ----------------------------------PICTURES----------------------------- */
 
-/* ============================= */
-/* CARROUSEL SWIPER */
-/* ============================= */
 
 .pictures {
   background: #000;
@@ -427,11 +433,12 @@ color: rgb(255,121,27);
 
 .pictures-title {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
   color: white;
 }
 
+/* CARROUSEL SWIPER */
 /* Taille du carrousel */
 .swiper {
   width: 80%;
@@ -464,7 +471,7 @@ color: rgb(255,121,27);
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: orange; /* couleur au survol */
+  color: rgb(255,121,27); /* couleur au survol */
 }
 
 
@@ -473,50 +480,84 @@ color: rgb(255,121,27);
 
 
 
-/* ----------------------------------INPUT----------------------------- */
+/* ----------------------------------CONTACT----------------------------- */
 
-.input-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 2rem;
-    margin-top: 5rem;
+
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 2rem;
+
 }
 
-.input-box h2{
-font-size: 3rem;
-color: white;
+.input-box {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(26, 26, 26, 0.8); /*sombre */
+  padding: 3rem;
+  border-radius: 2rem;
+  
 }
 
-.input-box input{
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-weight: 600;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input input,
+.input textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 2px solid #6e6e73;
+  border-radius: 1rem;
+  background: rgba(26, 26, 26, 0.8);
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  outline: none; /* pour que border reste*/
+
+}
+
+textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.input input:focus,
+.input textarea:focus {
+  border-color: rgb(255,121,27);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.bttn{
+    background: rgba(26, 26, 26, 0.8); /*sombre */
+    border: 2px solid white;
     border-radius: 3rem;
-    border: 1px solid rgb(255, 255, 255);
-    padding: 2rem 8rem;
-    font-size: 1.5rem;
-    color: rgb(0, 0, 0);
+    color: white;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+    align-self: center;
+    width: 200px;  /* largeur */
+    height: 50px;  /* hauteur */
 
 }
-
-.input-box input::placeholder{
-    font-size: 1.5rem;
-    color: 6e6e73;
-}
-
-.input{
-position: relative;
-}
-
-
-.input i{ /* logo enveloppe*/
-    position:absolute;
-    font-size: 4rem;
-    top: 50%;
-    left: 10px;
-    transform: translate(50%,-50%);
-    color: rgb(0, 0, 0);
-
+.bttn:hover {
+  background-color: rgb(255,121,27);
+  border-color: rgb(255,121,27);
+  color: black;
+  transform: translateY(-3px);
 }
 
 /* ----------------------------------footer----------------------------- */
