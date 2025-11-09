@@ -7,6 +7,8 @@ Ce projet illustre ma progression en tant qu’étudiant à Epitech Montpellier,
 
 💡 Fonctionnalités
 
+
+
 - Design fluide et responsive (pas encore téléphone)
 
 - Navigation claire entre les sections : À propos, Projets, Compétences, Photos, Contact
@@ -19,7 +21,10 @@ Ce projet illustre ma progression en tant qu’étudiant à Epitech Montpellier,
 
 - Formulaire de contact fonctionnel via mailto:
 
+
 🛠️ Technologies utilisées
+
+
 
 - HTML – Structure du site
 
@@ -31,7 +36,10 @@ Ce projet illustre ma progression en tant qu’étudiant à Epitech Montpellier,
 
 - Font Awesome – Icônes
 
+
 📂 Contenu du site
+
+
 
 À propos : Présentation de mon profil et photo
 
@@ -45,9 +53,12 @@ Contact : Formulaire pour m’écrire directement
 
 🚀 Visualisation
 
+- https://victor34110.github.io/Portfolio-/
+
 
 
 📧 Me contacter
+
 
 - 📩 Email : vic.galian22@gmail.com
 
