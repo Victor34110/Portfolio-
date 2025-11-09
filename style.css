@@ -215,64 +215,46 @@ color: rgb(255,121,27);
 }
 
 /* ------------------------------A PROPOS----------------------------------------*/
-.apropos h2{
+.apropos h2 {
     text-align: center;
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 3rem;
     color: white;
-
 }
 
-.apropos-conteneur{
+.apropos-conteneur {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    flex-wrap: wrap; /* pour que ça passe sur plusieurs lignes*/
 }
 
-.apropos-conteneur img{
+
+.apropos-conteneur img {
     width: 20vw;
     border-radius: 3rem;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+.apropos-conteneur img:hover {
+    transform: translateY(-10px)scale(1.02);
 }
 
-.grid-card{
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 3rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-
-}
-
-.grid-card p {
+.apropos-description {
+    max-width: 600px; /* largeur du texte */
     text-align: center;
-    font-weight: 600;
-    font-size: 1.2rem;
-
+    font-size: 1.4rem;
+    /*font-weight: 600;*/
+    line-height: 1.8;
+    color: #ffffff;
+    background-color: rgba(26, 26, 26, 0.6);
+    padding: 2rem;
+    border-radius: 2rem;
 }
-
-.grid-card:hover{
-    transform: scale(1.1);
-    background-color: black;
-}
-
-.grid-card:hover p {
-  background: linear-gradient(to right, rgb(0,157,255), rgb(0,250,20));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.2rem;
+.apropos-description:hover{
+   /* transform: translateY(-10px)scale(1.02);*/
+    border: 2px solid rgb(255,121,27);
 }
 
 /*-------------------------------PROJECT---------------------------------------*/
@@ -295,7 +277,8 @@ color: rgb(255,121,27);
 }
 
 .projects-card{
-    
+    width: 45vw;
+    min-height: 500px;
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -303,7 +286,6 @@ color: rgb(255,121,27);
     justify-content: center;
     text-align: center;
     gap: 1.5rem;
-    /*border: 1px solid rgb(255, 255, 255);*/
     border: 1px solid rgba(26, 26, 26, 0.8);
 
     background-color: rgba(26, 26, 26, 0.8); /*gris sombre*/
@@ -439,39 +421,40 @@ color: rgb(255,121,27);
 }
 
 /* CARROUSEL SWIPER */
+
 /* Taille du carrousel */
 .swiper {
-  width: 80%;
-  height: 400px;
+  width: 100%;
+  height: 500px;
   margin: 0 auto;
   /*position: sticky;*/
 }
 
 /* Style des images */
 .swiper-slide img {
-  width:80%;
+  width:50%;
   height: 100%;
   object-fit: cover;
   border-radius: 40px;
   align-items: center;
 
-  
+
 }
 :root { /*formaté à la racine */
     --swiper-navigation-color: rgb(255, 255, 255); /* noir par défaut */
     --swiper-navigation-size: 60px; /* taille des flèches */
-    --swiper-theme-color:rgb(241, 0, 149);
+    /*--swiper-theme-color:rgb(241, 0, 149);*/
 }
 
-    /* ----Flèches de navigation---- */
+
 .swiper-button-next,
 .swiper-button-prev {
-  transition: color 0.3s ease;
+transition: color 0.3s ease;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: rgb(255,121,27); /* couleur au survol */
+color: rgb(255,121,27);
 }
 
 
@@ -549,8 +532,8 @@ textarea {
     font-size: 1rem;
     transition: 0.3s ease-in-out;
     align-self: center;
-    width: 200px;  /* largeur */
-    height: 50px;  /* hauteur */
+    width: 200px;
+    height: 50px;
 
 }
 .bttn:hover {
@@ -565,8 +548,6 @@ textarea {
 
 
 footer{
-    bottom: 0;
-    left: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -584,6 +565,7 @@ footer ul{
     align-items: center;
     gap: 3rem;
     color: white;
+    margin-top: 20px;
 }
 
 
