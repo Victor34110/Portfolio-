@@ -585,19 +585,218 @@ footer a{
     
 }
 
+ /*  ------------TABLETTE 900px----------------*/
 
-@media(max-width:1280px){
 
 
+@media(max-width:900px){ /* Entre tablette et ordi*/
+
+header {
+    padding: 0.5rem 1rem;   /* moins large  */
+    gap: 3rem;
 }
 
-@media(max-width:768px){
-
-    
+.logo {
+    font-size: 1.2rem;
+    color: rgb(255,121,27);
 }
 
-@media(max-width:600px){
+.visit-btn {
+    display: none;
+}
+}
 
+
+
+
+ /*  ------------TABLETTE 768px----------------*/
+
+@media(max-width:768px){ /* grande tablette*/
+
+ header {
+    padding: 0.5rem 1rem;   /* moins large horizontalement */
+    gap: 3rem;              /* réduit l'espacement entre logo / liens / bouton */
+}
+  .logo {
+    font-size: 1.2rem;      /* légèrement plus petit */
+    color: rgb(255,121,27);
+  }
+
+  .visit-btn {
+    display: none;
+  }
+}
+
+
+
+ /*  ------------TABLETTE 600px----------------*/
+
+@media (max-width: 600px) { /*Moyenne tablette*/
+
+     /* Header compact, logo à gauche, burger à droite */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.5rem;
+    position: fixed;
+    top: 0;
     
+    right: 0;
+    background: rgba(18,18,18,0.95);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    border-radius: 1; /* pas d'arrondi sur mobile */
+  }
+
+  /* Logo plus petit */
+  .logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  /* Burger visible */
+  #menu-icon {
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Cacher la nav par défaut */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 100%; /* sous le header */
+    width: 50vw;
+    background: rgba(0,0,0,0.95);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 0;
+    gap: 1.5rem;
+    justify-content: center; /* CENTRAGE VERTICAL */
+    align-items: center;     /* CENTRAGE HORIZONTAL */
+
+    z-index: 999;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  /* Quand menu ouvert */
+  .nav-links.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Liens centrés et visibles */
+  .nav-links a {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  /* Couleur au clic / hover (mobile tactile) */
+  .nav-links a:active,
+  .nav-links a:focus,
+  .nav-links a:hover {
+    color: orange;
+  }
+
+  /* Bouton Visit caché */
+  .visit-btn {
+    display: none;
+  }
+
+  /* Supprimer l’animation hover pseudo ::before sur les liens */
+  li a::before {
+    display: none;
+  }
+
+ /*  ------------About----------------*/
+.about .about-container{
+    gap: 4rem;
+}
+.apropos-conteneur img {
+    width: 35vw;
+    border-radius: 2rem;
+}
+
+ /*  ------------PROJECT----------------*/
+.projects-card {
+    width: 55vw;
+    gap: 2rem;
+}
+.projects-card img {
+    width: 30vw;
+}
+.btn-group{
+    gap: 0.5rem;
+}
+}
+
+
+
+/*  ------------MOBILE----------------*/
+
+@media (max-width: 425px) { /* mobile 14 pro */
+
+.about img{
+    width: 30vw;
+    gap: 1rem;
+   }
+
+.text h3 {
+    font-size: 25px;
+}
+.text h1 {
+    font-size: 1.5rem;
+}
+.text span {
+    font-size: 1.2rem;
+}
+.btn{
+    padding: 4px 20px;
+}
+.apropos h2 {
+    font-size: 2rem;
+}
+
+.apropos-description {
+    font-size: 18px;
+}
+
+.projects h2 {
+    font-size: 2rem;
+}
+
+.projects-card {
+    width: 76vw;
+    gap: 2rem;
+    }
+
+.projects-card img {
+    width: 40vw;
+    }
+
+/*picture*/
+
+footer ul {
+    gap: 1rem;
     
+}
+}
+
+
+
+@media (max-width: 375px) { /* Iphone SE */
+   
+}
+
+@media (max-width: 320px) {/* Petit tel */
+   
 }
