@@ -614,9 +614,9 @@ header {
 @media(max-width:768px){ /* grande tablette*/
 
  header {
-    padding: 0.5rem 1rem;   /* moins large horizontalement */
-    gap: 3rem;              /* réduit l'espacement entre logo / liens / bouton */
-}
+    padding: 0.5rem 1rem;
+    gap: 3rem;
+    }
   .logo {
     font-size: 1.2rem;      /* légèrement plus petit */
     color: rgb(255,121,27);
@@ -625,6 +625,45 @@ header {
   .visit-btn {
     display: none;
   }
+
+
+  .about .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.apropos-conteneur img {
+    width: 40vw;
+}
+
+.projects-card {
+    gap: 2.5rem;
+    width: 60vw;
+}
+.projects-card img {
+    width: 30vw;
+    
+}
+
+
+.skill-title {
+    
+    margin-bottom: 6rem;
+    
+}
+
+
+.pictures-title {
+    margin-bottom: 6rem;
+}
+
+.swiper-slide img {
+    width: 60%;
+    height: 90%;
+    margin-bottom: 6rem;
+}
 }
 
 
@@ -727,6 +766,7 @@ header {
 }
 
  /*  ------------PROJECT----------------*/
+
 .projects-card {
     width: 55vw;
     gap: 2rem;
@@ -745,10 +785,20 @@ header {
 
 @media (max-width: 425px) { /* mobile 14 pro */
 
+
+/* ABOUT */
+.about .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3rem;
+}
+
 .about img{
     width: 30vw;
     gap: 1rem;
-   }
+}
 
 .text h3 {
     font-size: 25px;
@@ -770,6 +820,8 @@ header {
     font-size: 18px;
 }
 
+
+/* PROJECT*/
 .projects h2 {
     font-size: 2rem;
 }
@@ -784,7 +836,13 @@ header {
     }
 
 /*picture*/
+.swiper-slide img {
+    width: 60%;
+    height: 60%;
+    margin-top: 5rem;
+}
 
+/*footer*/
 footer ul {
     gap: 1rem;
     
@@ -794,9 +852,73 @@ footer ul {
 
 
 @media (max-width: 375px) { /* Iphone SE */
-   
+    .about img {
+        width: 35vw;
+    }
+
+    .apropos-conteneur img {
+        width: 40vw;
+    }
+
+    .skill-title{
+    font-size: 2rem;
+    }
+    
+    .skill-card img{
+    width: 12vw;
+    }
+
+    footer ul {
+    display: none;
+    }
+
+    .copyright {
+    color: rgb(255,121,27);
+    }
+
 }
 
+
+
 @media (max-width: 320px) {/* Petit tel */
-   
+
+ :root {
+    --swiper-navigation-size: 25px; /* change ici la taille souhaitée */
+  }
+
+  /* Forcer la taille si Swiper n'applique pas la variable */
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: var(--swiper-navigation-size) !important;
+    height: var(--swiper-navigation-size) !important;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: calc(var(--swiper-navigation-size) * 0.6) !important;
+  }
+
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+       .skill-title {
+        margin-bottom: 6rem;
+    }
+
+        .swiper-slide img {
+        width: 60%;
+        height: 50%;
+        margin-top: 7rem;
+    }
+    .bttn {
+    font-weight: 500;
+    width: 150px;
+    height: 40px;
+}
+
+
 }
