@@ -609,25 +609,25 @@ header {
 
 
 
- /*  ------------TABLETTE 768px----------------*/
+/*  ------------TABLETTE 768px----------------*/
 
 @media(max-width:768px){ /* grande tablette*/
 
- header {
+header {
     padding: 0.5rem 1rem;
     gap: 3rem;
     }
-  .logo {
+.logo {
     font-size: 1.2rem;      /* légèrement plus petit */
     color: rgb(255,121,27);
   }
 
-  .visit-btn {
+.visit-btn {
     display: none;
   }
 
 
-  .about .about-container {
+.about .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -649,7 +649,6 @@ header {
 
 
 .skill-title {
-    
     margin-bottom: 6rem;
     
 }
@@ -834,6 +833,14 @@ header {
 .projects-card img {
     width: 40vw;
     }
+
+.projects h2 {
+    font-size: 2rem;
+}
+
+
+
+
 
 /*picture*/
 .swiper-slide img {
