@@ -335,74 +335,120 @@ color: rgb(255,121,27);
 /* ----------------------------------SKILL------------------------------ */
 
 
-
-
+/* TITRES */
 .skill-title{
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  color: white;
+}
+.skill-static {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  justify-content: flex-start;
 }
 
-.skill-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 2rem;
-    justify-items: center;
+ /* Sous-titre */
+.skill-languages{
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
+/* CONTENEUR (fenêtre) */
+.skill-row {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* RUBAN QUI DÉFILE */
+.skill-track{
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  width: max-content;
+  animation: scroll-left 22s linear infinite;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Pause au hover */
+.skill-row:hover .skill-track {
+  animation-play-state: paused;
+}
+
+/* CARD (un skill) */
 .skill-card{
-    width: 0vw;
-    padding: 2rem 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1.5rem;
-    border: 2px solid black;
-    border-radius: 3rem;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    background-color: rgba(26, 26, 26, 0.8); /*gris sombre*/
-    position: relative;
-}
-
-
-
-.skill-name {
-    position: absolute;
-    left: 50%;
-    transform: translate(-90%, 10px); /* départ décalé 10PX */
-    bottom: -29px;                    /* sous la map */
-    background-color: rgba(0, 0, 0, 0.8); /*gris sombre*/
-    color: #ffffff;
-    font-size: 0.80rem;
-    padding: 6px 60px;
-    opacity: 0;
-    z-index: 20;
-    font-weight: 600
-}
-
-.skill-card:hover .skill-name {
-    opacity: 1;
-    transform: translate(-50%, 0); /* remonte en position visible */
+  flex: 0 0 auto;
+  width: auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background-color: rgba(26, 26, 26, 0.8);
+  position: relative;
 }
 
 .skill-card img{
-    width: 8vw;
-    border-radius: 1rem;
-    background-color: rgba(26, 26, 26, -0.2); /*gris sombre*/
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 12px;
+}
 
+/* LABEL (nom qui apparaît) */
+.skill-name {
+  position: absolute;
+  left: 50%;
+  bottom: -29px;
+  transform: translate(-50%, 10px);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-size: 0.75rem;
+  padding: 6px 20px;
+  opacity: 0;
+  z-index: 20;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.skill-card:hover .skill-name {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 .skill-card:hover {
-    
-    transform: translateY(-10px)scale(1.02);
-    border: 2px solid #6e6e73;
-
+  transform: translateY(-10px) scale(1.02);
+  border: 2px solid #6e6e73;
 }
 
+/* OPTION : plus compact mobile */
+@media (max-width: 768px){
+  .skill-card img{
+    width: 42px;
+    height: 42px;
+  }
+  .skill-track{
+    gap: 1.25rem;
+    animation-duration: 18s;
+  }
+}
 
 
 /* ----------------------------------PICTURES----------------------------- */
