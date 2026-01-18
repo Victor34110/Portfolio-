@@ -502,10 +502,36 @@ transition: color 0.3s ease;
 color: rgb(255,121,27);
 }
 
+.intro-pictures{
+  max-width: 720px;
+  margin: 0 auto 24px;
+  text-align: center;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+  font-size: 1.05rem;
+  margin-top: 40px;
+  font-weight: 700;
+}
 
+.travel-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffffff;
+  transition: transform 160ms ease;
+  color: rgb(255,121,27);
+  font-style: italic;
+}
 
+.travel-link:hover{
+  transform: translateY(-1px);
 
-
+}
 
 
 /* ----------------------------------CONTACT----------------------------- */
