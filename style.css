@@ -310,6 +310,10 @@ color: rgb(255,121,27);
     border-radius: 1rem;
 }
 
+.projects-card-more img{
+  width: 23vw;
+}
+
 .btn-group{
     gap: 1rem;
 }
