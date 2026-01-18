@@ -516,20 +516,23 @@ color: rgb(255,121,27);
 .travel-link{
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  margin-top: 20px;
-  padding: 5px 10px;
+  margin-top: 30px;
+  padding: 7px 17px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: 700;
-  color: #ffffff;
+  background: rgba(26, 26, 26, 0.8); /*sombre */
   transition: transform 160ms ease;
-  color: rgb(255,121,27);
+  color: rgb(255, 255, 255);
   font-style: italic;
+  border: 2px solid #6e6e73;
 }
 
 .travel-link:hover{
-  transform: translateY(-1px);
+  transform: translateY(-3px);
+  background-color: rgb(255,121,27);
+  border: 2px solid rgb(255,121,27);
+  color: black;
 
 }
 
