@@ -313,6 +313,9 @@ color: rgb(255,121,27);
 .projects-card-more img{
   width: 23vw;
 }
+.projects-card-discord img{
+    width: 30vw;
+}
 
 .btn-group{
     gap: 1rem;
