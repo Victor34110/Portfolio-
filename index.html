@@ -123,11 +123,20 @@
     <!------------- PROJECT----------------------->
 
     <section id="projects" class="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
+      <div class="projects-header">
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-carousel-shell">
+        <div
+          class="swiper projects-swiper"
+          role="region"
+          aria-label="Carrousel des projets"
+        >
+          <div class="swiper-wrapper projects-grid">
 
       <!----Jobster---->
-        <div class="projects-card">
+        <div class="swiper-slide projects-card">
           <img src="photos/jobster_beige.png" alt="" />
           <h3>Job-Board</h3>
           <p>JOBSTER is a web app for posting and finding jobs.</p>
@@ -147,7 +156,7 @@
         </div>
 
       <!----Portfolio---->
-        <div class="projects-card">
+        <div class="swiper-slide projects-card">
           <img src="photos/portfolio-remove.png" alt="" />
           <h3>Portfolio</h3>
           <p>
@@ -173,7 +182,7 @@
         </div>
 
       <!---- Carnet de vadrouille---->
-        <div class="projects-card">
+        <div class="swiper-slide projects-card">
           <img src="photos/carnet_vadrouille-remove.png" alt="" />
           <h3>Carnet de vadrouille</h3>
           <p>
@@ -199,7 +208,7 @@
         </div>
 
       <!---- Pac-Man---->
-        <div class="projects-card">
+        <div class="swiper-slide projects-card">
           <img src="photos/pac-man_remove.png" alt="" />
           <h3>Pac-Man</h3>
           <p>Development of a 2D Pac-Man game using Java and LibGDX.</p>
@@ -221,7 +230,7 @@
         </div>
 
       <!----TalkMe---->
-         <div class="projects-card projects-card-discord">
+         <div class="swiper-slide projects-card projects-card-discord">
           <img src="photos/talkme.png" alt="" />
           <h3>Real-Time Chat Platform</h3>
           <p>Full-stack real-time chat platform inspired by Discord, featuring React, NestJS, PostgreSQL, and Socket.IO</p>
@@ -233,20 +242,36 @@
 
         </div>
 
-       <!-- <div class="projects-card projects-card-more">
-          <img src="photos/other.png" alt="" />
-          <h3>More Projects</h3>
-          <p>
-            Find my other projects, experiments, and source code directly on my GitHub.
-          </p>
+         <!----FactoryWatch---->
+         <div class="swiper-slide projects-card projects-card-discord">
+          <img src="photos/Factory_watch.png" alt="" />
+          <h3>Factory_Watch</h3>
+          <p>Full-stack real-time chat platform inspired by Discord, featuring React, NestJS, PostgreSQL, and Socket.IO</p>
 
           <div class="btn-group">
-            <a href="https://github.com/Victor34110" class="btn" target="_blank">Github Repo</a>
+            <a class="btn" target="_blank">Wait..</a>
+            <a href="https://github.com/Victor34110/FactoryWatch" class="btn" target="_blank">Github Repo</a>
           </div>
-        </div>-->
 
+        </div>
+          </div>
+          <div class="swiper-pagination projects-pagination"></div>
+        </div>
 
-
+        <button
+          class="projects-carousel-btn projects-carousel-prev"
+          type="button"
+          aria-label="Voir le projet précédent"
+        >
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        </button>
+        <button
+          class="projects-carousel-btn projects-carousel-next"
+          type="button"
+          aria-label="Voir le projet suivant"
+        >
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </button>
       </div>
     </section>
 

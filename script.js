@@ -13,6 +13,38 @@ document.addEventListener('DOMContentLoaded', function () {
         prevEl: ".swiper-button-prev",
       },
     });
+
+    new Swiper('.projects-swiper', {
+      effect: 'coverflow',
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      grabCursor: true,
+      loop: true,
+      speed: 650,
+      keyboard: {
+        enabled: true,
+      },
+      mousewheel: {
+        forceToAxis: true,
+        sensitivity: 1,
+      },
+      coverflowEffect: {
+        rotate: 38,
+        stretch: 0,
+        depth: 180,
+        modifier: 1,
+        scale: 0.88,
+        slideShadows: false,
+      },
+      navigation: {
+        nextEl: '.projects-carousel-next',
+        prevEl: '.projects-carousel-prev',
+      },
+      pagination: {
+        el: '.projects-pagination',
+        clickable: true,
+      },
+    });
   }
 
   // Menu responsive
