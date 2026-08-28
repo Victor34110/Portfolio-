@@ -612,6 +612,11 @@ color: rgb(255,121,27);
   text-align: center;
 }
 
+.pictures .swiper {
+  --swiper-pagination-color: rgb(255,121,27);
+  --swiper-theme-color: rgb(255,121,27);
+}
+
 .pictures-title {
   text-align: center;
   font-size: 3rem;
